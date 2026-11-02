@@ -1,0 +1,39 @@
+{
+  "name": "evo-marko-mcp",
+  "version": "1.0.0",
+  "description": "MCP server with definitions and Marko 6 usage for every eBay evo-web component, plus the Marko 6 docs from markojs.com",
+  "type": "module",
+  "license": "MIT",
+  "author": "Andrew Gliga",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agliga/evo-marko-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "marko",
+    "marko6",
+    "evo-web",
+    "ebay",
+    "design-system"
+  ],
+  "bin": {
+    "evo-marko-mcp": "bin/evo-marko-mcp.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "data/index.json"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "start": "node bin/evo-marko-mcp.js",
+    "crawl": "node scripts/crawl.mjs",
+    "build:index": "node scripts/build-index.mjs",
+    "refresh": "node scripts/crawl.mjs && node scripts/build-index.mjs",
+    "test": "node --test"
+  }
+}

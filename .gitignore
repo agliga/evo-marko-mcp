@@ -1,0 +1,5 @@
+node_modules/
+.cache/
+data/crawl.json
+*.log
+.DS_Store
